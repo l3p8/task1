@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "rewrites": [
+    { "source": "/", "destination": "/api/entrypoint?action=docs" },
+    { "source": "/api/shorten", "destination": "/api/entrypoint?action=shorten" },
+    { "source": "/swagger.json", "destination": "/api/entrypoint?action=swagger_json" },
+    { "source": "/docs", "destination": "/api/entrypoint?action=docs" },
+    { "source": "/:code", "destination": "/api/entrypoint?code=:code" }
+  ]
+}
